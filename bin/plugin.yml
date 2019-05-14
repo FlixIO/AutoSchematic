@@ -1,0 +1,11 @@
+name: AutoSchem
+author: Flix.IO
+version: 1.0
+main: io.flixion.main.AutoMain
+description: An automatic printer block provider plugin that hooks into Essentials
+softdepend: [Factions, Essentials, Vault]
+
+commands:
+  printer:
+    description: Toggle autoprint mode
+    usage: '&eCorrect command usage: /<command>'

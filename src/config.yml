@@ -1,0 +1,37 @@
+#   useEssentialsWorth - Hook into essentials worth.yml file for block prices
+#   nearbyPlayerSearchRadius - If there is a player found in this area printer will be disabled
+#                            according to the allowedRelations below
+#   allowedCommands - These commands will be allowed while printer mode is enabled, leave /printer!
+#   allowedRelations - These relations of players will be ignored by nearby player search
+#                      RELATIONS: MEMBER, ALLY, ENEMY, NEUTRAL 
+#   itemPrices - If useEssentialsWorth is disabled, this list will be used instead
+#                Format: MATERIAL_ENUM#PRICE 
+
+settings:
+  useEssentialsWorth: false
+  nearbyPlayerSearchRadius: 32
+  allowedCommands:
+    - /printer
+    - /msg
+    - /r
+  allowedRelations:
+    - ALLY
+    - MEMBER
+  itemPrices:
+    - STONE#1.00
+    - REDSTONE#25.00
+    - GLOWSTONE#20.00
+    - COBBLESTONE#1.00
+ 
+#   %amount%  - The amount of the purchased item
+#   %item% - The purchased item
+ 
+lang:
+  PRINTER_ENABLED: '&4&l(!) &ePrinter Enabled!'
+  PRINTER_DISABLED: '&4&l(!) &ePrinter Disabled!'
+  PRINTER_BAD_ACTION: '&4&l(!) &eThis action is not allowed while in printer mode!'
+  PRINTER_STOP_TERRITORY: '&4&l(!) &eYou have left your own/ally territory, printer disabled!'
+  PRINTER_STOP_NEARBY_PLAYER: '&4&l(!) &eThere is a nearby player, printer disabled!'
+  PRINTER_PURCHASE_TEXT: '&8[&aASchem&8] &8[&4-&8] &e%amount% - Placed 1x %item%'
+  PRINTER_COMMAND_NOT_ALLOWED: '&4&l(!) &eYou cannot use this command while in printer mode'
+    
